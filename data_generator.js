@@ -13,6 +13,7 @@ streams.users.mracus = [];
 streams.users.douglascalhoun = [];
 window.users = Object.keys(streams.users);
 
+
 // utility function for adding tweets to our data structures
 var addTweet = function(newTweet){
   var username = newTweet.user;
@@ -42,9 +43,17 @@ var generateRandomTweet = function(){
   var tweet = {};
   tweet.user = randomElement(users);
   tweet.message = randomMessage();
-  tweet.created_at = new Date();
+  tweet.created_at = myFunction();
   addTweet(tweet);
 };
+
+function myFunction() {
+  var d = new Date();
+  var n = d.toLocaleString();
+  return n
+  // document.getElementById("demo").innerHTML = n;
+}
+
 
 for(var i = 0; i < 10; i++){
   generateRandomTweet();
@@ -67,3 +76,4 @@ var writeTweet = function(message){
   tweet.message = message;
   addTweet(tweet);
 };
+
