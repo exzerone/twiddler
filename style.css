@@ -52,3 +52,9 @@ body {
   -o-background-size: cover;
   background-size: cover;
 }
+
+.heading{
+	display:flex;
+	justify-content: center;
+	font-family: Helvetica Neue, sans-serif; 
+}
