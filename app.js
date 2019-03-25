@@ -1,26 +1,20 @@
 $(document).ready(function(){
 
+  
   var index = streams.home.length - 1;
   while(index >= 0){
     var tweet = streams.home[index];
     var $tweet = $('<div class=mainTweet></div>');
-    // var $user = $('<p class=user></p>');
-    // var $message = $('<p class=message></p>');
-    // var $dateTime = $('<span class=dateTime></span>');
     $tweet.text('@' + tweet.user + ': ' + tweet.message + ' posted at ' + tweet.created_at );
     $tweet.appendTo(".main");
     index -= 1;
   }
 
-  // $(".users").on('click', function(){
-  //   filter()
-  // });
-
-
 });
 
   function newTweet(){
-   
+    var $newsfeed = $('.newsfeed');
+    $newsfeed.html('');
     var tweet = streams.home[Math.floor(Math.random() * streams.home.length)];
     var $tweet = $('<div class = newTweet></div>');
     generateRandomTweet()
@@ -33,6 +27,8 @@ $(document).ready(function(){
     generateRandomTweet()
     var $main = $('.main');
     $main.html('');
+    var $newsfeed = $('.newsfeed');
+    $newsfeed.html('');
     var index = streams.users.mracus.length-1;
     while ( index >= 0){
       var randomize = streams.users.mracus[Math.floor(Math.random() * streams.users.mracus.length)]; 
@@ -46,6 +42,8 @@ $(document).ready(function(){
     generateRandomTweet()
     var $main = $('.main');
     $main.html('');
+    var $newsfeed = $('.newsfeed');
+    $newsfeed.html('');
     var index = streams.users.sharksforcheap.length-1;
     while ( index >= 0){
       var randomize = streams.users.sharksforcheap[Math.floor(Math.random() * streams.users.sharksforcheap.length)]; 
@@ -59,6 +57,8 @@ $(document).ready(function(){
     generateRandomTweet()
     var $main = $('.main');
     $main.html('');
+    var $newsfeed = $('.newsfeed');
+    $newsfeed.html('');
     var index = streams.users.douglascalhoun.length-1;
     while ( index >= 0){
       var randomize = streams.users.douglascalhoun[Math.floor(Math.random() * streams.users.douglascalhoun.length)]; 
@@ -72,6 +72,8 @@ $(document).ready(function(){
     generateRandomTweet()
     var $main = $('.main');
     $main.html('');
+    var $newsfeed = $('.newsfeed');
+    $newsfeed.html('');
     var index = streams.users.mracus.length-1;
     while ( index >= 0){
       var randomize = streams.users.shawndrost[Math.floor(Math.random() * streams.users.shawndrost.length)]; 
