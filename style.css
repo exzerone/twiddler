@@ -58,3 +58,7 @@ body {
 	justify-content: center;
 	font-family: Helvetica Neue, sans-serif; 
 }
+
+.userTweet{
+	color: blue
+}

@@ -8,16 +8,22 @@
     <title>TWIDDLER!</title>
   </head>
   <body>
-    <div><h1 class = 'heading'>Twiddler</h1></div>
     <div class='container'>
-    <div class="tweets">
-      <section class = "main">
+      <h1 class = 'heading'>Twiddler</h1>
+      <button class = newTweet onclick = "newTweet()">New Tweet</button>
+    <div class = "tweet">
+      <section class = 'main'>
+      </section>
+      <section class = 'newsfeed'>
+      </section>
     </div>
-    <script src = 'app.js'></script>
-    </div> 
-    <button class = "mracus" onclick = "mracus()">mracus</button>
-    <button class = "shawndrost" onclick = "shawndrost()">shawndrost</button>
-    <button class = "sharksforcheap" onclick = "sharksforcheap()">sharksforcheap</button>
-    <button class = "douglascalhoun" onclick = "douglascalhoun()">douglascalhoun</button>
+    <script src = 'app.js'></script> 
+    <div class = 'users'>
+      <button class = "mracus" onclick = "mracus()">mracus</button>
+      <button class = "shawndrost" onclick = "shawndrost()">shawndrost</button>
+      <button class = "sharksforcheap" onclick = "sharksforcheap()">sharksforcheap</button>
+      <button class = "douglascalhoun" onclick = "douglascalhoun()">douglascalhoun</button>
+    </div>
+    </div>
   </body>
 </html>
